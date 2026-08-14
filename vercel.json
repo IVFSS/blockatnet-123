@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "env": {
+    "MORALIS_API_KEY": "@moralis-api-key",
+    "NEXTAUTH_SECRET": "@nextauth-secret",
+    "NEXTAUTH_URL": "@nextauth-url",
+    "TOKENINSIGHT_API_KEY": "@tokeninsight-api-key"
+  }
+}
