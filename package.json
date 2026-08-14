@@ -40,7 +40,7 @@
     "file-saver": "^2.0.5",
     "firebase": "^10.11.1",
     "framer-motion": "^10.18.0",
-    "getstream": "^8.4.1",
+    "getstream": "^8.14.0",
     "graphology": "^0.25.4",
     "graphology-library": "^0.8.0",
     "gsap": "^3.15.0",
