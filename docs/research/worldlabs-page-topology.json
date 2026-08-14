@@ -1,0 +1,200 @@
+[
+  {
+    "index": 0,
+    "tag": "nav",
+    "classes": "border-foreground/10 fixed top-0 z-2000 w-full",
+    "text": "AboutResearch & InsightsMarble LabsCommunity ShowcaseCase StudiesLearnAPISparkCareersCreate with Marble",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 768,
+      "height": 58
+    },
+    "styles": {
+      "background": "rgb(249, 249, 251)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 1,
+    "tag": "main",
+    "classes": "flex flex-col gap-24 lg:gap-32",
+    "text": "Click to exploreWorld LabsSpatial IntelligenceWorld Labs is building the next frontier of generative AI — one where models can understand and interact",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 768,
+      "height": 5158
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "classes": "relative h-svh will-change-transform lg:mb-[100svh]",
+    "text": "Click to exploreWorld LabsSpatial IntelligenceWorld Labs is building the next frontier of generative AI — one where models can understand and interact",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "classes": "mx-auto my-0 px-0 py-0 lg:px-10",
+    "text": "Click to exploreWorld LabsSpatial IntelligenceWorld Labs is building the next frontier of generative AI — one where models can understand and interact",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 768,
+      "height": 1024
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "classes": "mx-auto px-6 lg:px-10 max-w-screen-2xl lg:grid",
+    "text": "Spatial intelligence transforms seeing into doing, understanding into reasoning, and imagining into creating.World Labs is a leading spatial intellige",
+    "rect": {
+      "top": 1140,
+      "left": 0,
+      "width": 768,
+      "height": 770
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px 24px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "classes": "mx-auto px-6 lg:px-10 flex w-full",
+    "text": "From pixels to worldsMarble, our first product, generates spatially consistent, high-fidelity, and persistent 3D worlds that you can move through, edi",
+    "rect": {
+      "top": 1986,
+      "left": 0,
+      "width": 768,
+      "height": 958
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px 24px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "classes": "mx-auto px-6 lg:px-10 flex w-full",
+    "text": "Marble LabsWhere imaginative ideas, bold experiments, and creative workflows come to life. Explore in-depth case studies showcasing how Marble powers ",
+    "rect": {
+      "top": 3040,
+      "left": 0,
+      "width": 768,
+      "height": 1124
+    },
+    "styles": {
+      "background": "rgb(17, 17, 17)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "32px 24px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "classes": "px-6 lg:px-10 max-w-display mx-auto flex",
+    "text": "Research and InsightsJuly 28, 2026The Next Frontier of AI Is Spatial IntelligenceMartin Casado (a16z) sits down with Fei-Fei Li and Yunzhu Li to discu",
+    "rect": {
+      "top": 4260,
+      "left": 0,
+      "width": 768,
+      "height": 898
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px 24px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "classes": "mx-auto lg:px-10 relative mt-32 p-0",
+    "text": "Unleash your creativity  with MarbleCreate with MarbleAboutResearch & InsightsMarble LabsAPISparkCareersTerms of ServicePrivacy PolicySecurity© 2025 W",
+    "rect": {
+      "top": 5286,
+      "left": 0,
+      "width": 768,
+      "height": 916.5
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px 0px 40px",
+      "margin": "128px 0px 0px"
+    }
+  },
+  {
+    "index": 9,
+    "tag": "footer",
+    "classes": "",
+    "text": "Unleash your creativity  with MarbleCreate with MarbleAboutResearch & InsightsMarble LabsAPISparkCareersTerms of ServicePrivacy PolicySecurity© 2025 W",
+    "rect": {
+      "top": 5286,
+      "left": 0,
+      "width": 768,
+      "height": 876.5
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 10,
+    "tag": "nav",
+    "classes": "pointer-events-auto mx-auto flex w-fit max-w-full",
+    "text": "AboutResearch & InsightsMarble LabsAPISparkCareersTerms of ServicePrivacy PolicySecurity",
+    "rect": {
+      "top": 5658,
+      "left": 40,
+      "width": 141.5625,
+      "height": 336
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(46, 46, 56)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  }
+]

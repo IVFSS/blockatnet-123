@@ -1,0 +1,47 @@
+{
+  "colors": {
+    "background": "rgba(0, 0, 0, 0)",
+    "text": "rgb(0, 0, 0)",
+    "h1": {
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "h2": {
+      "color": "rgb(15, 15, 15)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "h3": {
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "p": {
+      "color": "rgb(15, 15, 15)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "a": {
+      "color": "rgb(0, 20, 5)",
+      "bg": "rgb(5, 201, 47)"
+    },
+    "button": {
+      "color": "rgb(15, 15, 15)",
+      "bg": "rgb(255, 255, 255)"
+    },
+    "[class*=\"nav\"]": {
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  },
+  "fonts": {
+    "body": "\"Tomato Grotesk\", Arial, sans-serif",
+    "h1": "\"Tomato Grotesk\", Arial, sans-serif",
+    "h2": "\"Tomato Grotesk\", Arial, sans-serif",
+    "h3": "\"Tomato Grotesk\", Arial, sans-serif",
+    "p": "\"Tomato Grotesk\", Arial, sans-serif",
+    "a": "\"Tomato Grotesk\", Arial, sans-serif",
+    "button": "\"Tomato Grotesk\", Arial, sans-serif",
+    "[class*=\"nav\"]": "\"Tomato Grotesk\", Arial, sans-serif"
+  },
+  "spacing": {},
+  "shadows": {},
+  "borderRadii": {}
+}

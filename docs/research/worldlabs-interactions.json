@@ -1,0 +1,779 @@
+[
+  {
+    "index": 0,
+    "tag": "a",
+    "text": "",
+    "href": "https://www.worldlabs.ai/",
+    "rect": {
+      "top": 10,
+      "left": 24,
+      "width": 0,
+      "height": 32
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 1,
+    "tag": "a",
+    "text": "About",
+    "href": "https://www.worldlabs.ai/about",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 2,
+    "tag": "a",
+    "text": "Research & Insights",
+    "href": "https://www.worldlabs.ai/blog",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 3,
+    "tag": "a",
+    "text": "Marble Labs",
+    "href": "https://www.worldlabs.ai/labs",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 4,
+    "tag": "a",
+    "text": "Community Showcase",
+    "href": "https://www.worldlabs.ai/labs/showcase",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 5,
+    "tag": "a",
+    "text": "Case Studies",
+    "href": "https://www.worldlabs.ai/labs#marble-labs-visualize",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 6,
+    "tag": "a",
+    "text": "Learn",
+    "href": "https://www.worldlabs.ai/labs/learn",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 7,
+    "tag": "a",
+    "text": "API",
+    "href": "https://platform.worldlabs.ai/",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 8,
+    "tag": "a",
+    "text": "Spark",
+    "href": "https://sparkjs.dev/",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 9,
+    "tag": "a",
+    "text": "Careers",
+    "href": "https://job-boards.greenhouse.io/worldlabs",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(95, 95, 117)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(95, 95, 117)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 10,
+    "tag": "a",
+    "text": "Create with Marble",
+    "href": "https://marble.worldlabs.ai/",
+    "rect": {
+      "top": 0,
+      "left": 0,
+      "width": 0,
+      "height": 0
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgb(46, 46, 56)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 20px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 11,
+    "tag": "button",
+    "text": "",
+    "href": null,
+    "rect": {
+      "top": 13,
+      "left": 712,
+      "width": 32,
+      "height": 32
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 12,
+    "tag": "a",
+    "text": "Learn more about us",
+    "href": "https://www.worldlabs.ai/about",
+    "rect": {
+      "top": 1828,
+      "left": 48,
+      "width": 216.859375,
+      "height": 50
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgb(46, 46, 56)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 20px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 13,
+    "tag": "a",
+    "text": "Start creating with Marble",
+    "href": "https://marble.worldlabs.ai/",
+    "rect": {
+      "top": 2894,
+      "left": 24,
+      "width": 254.421875,
+      "height": 50
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgb(46, 46, 56)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 20px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 14,
+    "tag": "a",
+    "text": "Community ShowcaseCreator highlightsExplorationsCr",
+    "href": "https://www.worldlabs.ai/labs/showcase",
+    "rect": {
+      "top": 3248,
+      "left": 24,
+      "width": 348,
+      "height": 400
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 15,
+    "tag": "a",
+    "text": "Case StudiesReal-world workflowsProduction systems",
+    "href": "https://www.worldlabs.ai/labs#marble-labs-visualize",
+    "rect": {
+      "top": 3248,
+      "left": 396,
+      "width": 348,
+      "height": 400
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 16,
+    "tag": "a",
+    "text": "LearnTutorialsDocumentationCommunityWhere curiosit",
+    "href": "https://www.worldlabs.ai/labs/learn",
+    "rect": {
+      "top": 3672,
+      "left": 24,
+      "width": 348,
+      "height": 400
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 17,
+    "tag": "a",
+    "text": "Explore Marble Labs →",
+    "href": "https://www.worldlabs.ai/labs",
+    "rect": {
+      "top": 4104,
+      "left": 283.796875,
+      "width": 200.390625,
+      "height": 48
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgb(249, 249, 251)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 20px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 18,
+    "tag": "a",
+    "text": "July 28, 2026The Next Frontier of AI Is Spatial In",
+    "href": "https://www.worldlabs.ai/blog/news-july-2026",
+    "rect": {
+      "top": 4340,
+      "left": 24,
+      "width": 348,
+      "height": 356
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 19,
+    "tag": "a",
+    "text": "July 28, 2026Building Worlds That Train RobotsReal",
+    "href": "https://www.worldlabs.ai/blog/real-to-sim-to-real",
+    "rect": {
+      "top": 4340,
+      "left": 396,
+      "width": 348,
+      "height": 356
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 20,
+    "tag": "a",
+    "text": "July 21, 2026World Labs Acquires SceniXAdvancing S",
+    "href": "https://www.worldlabs.ai/blog/scenix",
+    "rect": {
+      "top": 4720,
+      "left": 24,
+      "width": 348,
+      "height": 356
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "16px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 21,
+    "tag": "a",
+    "text": "Read more",
+    "href": "https://www.worldlabs.ai/blog",
+    "rect": {
+      "top": 5108,
+      "left": 310.875,
+      "width": 146.234375,
+      "height": 50
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgb(46, 46, 56)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "16px 20px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 22,
+    "tag": "a",
+    "text": "Create with Marble",
+    "href": "https://marble.worldlabs.ai/",
+    "rect": {
+      "top": 5475.59375,
+      "left": 237.234375,
+      "width": 293.515625,
+      "height": 58
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgb(46, 46, 56)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "3.35544e+07px",
+      "padding": "20px 64px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 23,
+    "tag": "a",
+    "text": "About",
+    "href": "https://www.worldlabs.ai/about",
+    "rect": {
+      "top": 5658,
+      "left": 40,
+      "width": 44.8125,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 24,
+    "tag": "a",
+    "text": "Research & Insights",
+    "href": "https://www.worldlabs.ai/blog",
+    "rect": {
+      "top": 5698,
+      "left": 40,
+      "width": 141.5625,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 25,
+    "tag": "a",
+    "text": "Marble Labs",
+    "href": "https://www.worldlabs.ai/labs",
+    "rect": {
+      "top": 5738,
+      "left": 40,
+      "width": 87.484375,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 26,
+    "tag": "a",
+    "text": "API",
+    "href": "https://platform.worldlabs.ai/",
+    "rect": {
+      "top": 5778,
+      "left": 40,
+      "width": 23.90625,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 27,
+    "tag": "a",
+    "text": "Spark",
+    "href": "https://sparkjs.dev/",
+    "rect": {
+      "top": 5818,
+      "left": 40,
+      "width": 41.921875,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 28,
+    "tag": "a",
+    "text": "Careers",
+    "href": "https://job-boards.greenhouse.io/worldlabs",
+    "rect": {
+      "top": 5858,
+      "left": 40,
+      "width": 56.359375,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 29,
+    "tag": "a",
+    "text": "Terms of Service",
+    "href": "https://www.worldlabs.ai/terms-of-service",
+    "rect": {
+      "top": 5898,
+      "left": 40,
+      "width": 119.671875,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 30,
+    "tag": "a",
+    "text": "Privacy Policy",
+    "href": "https://www.worldlabs.ai/privacy-policy",
+    "rect": {
+      "top": 5938,
+      "left": 40,
+      "width": 96.796875,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 31,
+    "tag": "a",
+    "text": "Security",
+    "href": "https://www.worldlabs.ai/security",
+    "rect": {
+      "top": 5978,
+      "left": 40,
+      "width": 59.640625,
+      "height": 16
+    },
+    "styles": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(249, 249, 251)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 32,
+    "tag": "a",
+    "text": "",
+    "href": "https://www.worldlabs.ai/",
+    "rect": {
+      "top": 6120.25,
+      "left": 24,
+      "width": 164.625,
+      "height": 32
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 33,
+    "tag": "a",
+    "text": "",
+    "href": "https://x.com/theworldlabs",
+    "rect": {
+      "top": 6122.25,
+      "left": 589.390625,
+      "width": 22.609375,
+      "height": 28
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 34,
+    "tag": "a",
+    "text": "",
+    "href": "https://www.instagram.com/theworldlabs",
+    "rect": {
+      "top": 6122.25,
+      "left": 628,
+      "width": 28,
+      "height": 28
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 35,
+    "tag": "a",
+    "text": "",
+    "href": "https://youtube.com/@worldlabsai",
+    "rect": {
+      "top": 6122.25,
+      "left": 672,
+      "width": 28,
+      "height": 28
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  },
+  {
+    "index": 36,
+    "tag": "a",
+    "text": "",
+    "href": "https://discord.com/invite/jSSSgXWT3v",
+    "rect": {
+      "top": 6122.25,
+      "left": 716,
+      "width": 28,
+      "height": 28
+    },
+    "styles": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgb(46, 46, 56)",
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "500"
+    }
+  }
+]

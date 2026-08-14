@@ -1,0 +1,289 @@
+/* WorldLabs.ai Design Tokens — Global CSS Variables */
+:root {
+  /* Colors (WorldLabs.ai actual) */
+  --worldlabs-bg: #f9f9fb;
+  --worldlabs-card: #ffffff;
+  --worldlabs-primary: #2a679c;
+  --worldlabs-primary-foreground: #2e2e38;
+  --worldlabs-muted: #9494a8;
+  --worldlabs-border: #e5e7eb;
+  --worldlabs-dark: #111111;
+  --worldlabs-success: #05c92f;
+  --worldlabs-warning: #f59e0b;
+  --worldlabs-info: #3b82f6;
+
+  /* Typography (WorldLabs.ai uses "roobert" for body, "Gilda Display" for headings) */
+  --worldlabs-font-body: roobert, "Helvetica Neue", Arial, sans-serif;
+  --worldlabs-font-heading: "Gilda Display", Georgia, serif;
+  --worldlabs-font-mono: 'SF Mono', Consolas, monospace;
+
+  /* Border Radius */
+  --worldlabs-radius-sm: 8px;
+  --worldlabs-radius-md: 12px;
+  --worldlabs-radius-lg: 16px;
+  --worldlabs-radius-xl: 20px;
+  --worldlabs-radius-full: 9999px;
+
+  /* Shadows */
+  --worldlabs-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --worldlabs-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --worldlabs-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --worldlabs-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --worldlabs-transition-fast: all 0.15s ease;
+  --worldlabs-transition-normal: all 0.2s ease;
+  --worldlabs-transition-slow: all 0.3s ease;
+
+  /* Spacing */
+  --worldlabs-section-padding: 64px;
+  --worldlabs-container-max: 1440px;
+}
+
+/* Light theme (default for blockatnet) */
+[data-theme="light"] {
+  --worldlabs-bg: #f9f9fb;
+  --worldlabs-card: #ffffff;
+  --worldlabs-primary: #2a679c;
+  --worldlabs-primary-foreground: #2e2e38;
+  --worldlabs-muted: #9494a8;
+  --worldlabs-border: #e5e7eb;
+}
+
+/* Light theme (default for blockatnet) */
+[data-theme="light"] {
+  --worldlabs-bg: #f9f9fb;
+  --worldlabs-card: #ffffff;
+  --worldlabs-primary: #2a679c;
+  --worldlabs-primary-foreground: #2e2e38;
+  --worldlabs-muted: #9494a8;
+  --worldlabs-border: #e5e7eb;
+}
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--worldlabs-font-body);
+  background-color: var(--worldlabs-bg);
+  color: var(--worldlabs-primary-foreground);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Headings use Gilda Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--worldlabs-font-heading);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--worldlabs-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--worldlabs-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--worldlabs-muted);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--worldlabs-primary);
+  color: #ffffff;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid var(--worldlabs-primary);
+  outline-offset: 2px;
+}
+
+/* Link styling */
+a {
+  color: var(--worldlabs-primary);
+  text-decoration: none;
+  transition: var(--worldlabs-transition-normal);
+}
+
+a:hover {
+  color: var(--worldlabs-primary-foreground);
+  text-decoration: underline;
+}
+
+/* Button reset */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utility classes */
+.worldlabs-container {
+  max-width: var(--worldlabs-container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.worldlabs-section {
+  padding: var(--worldlabs-section-padding) 0;
+}
+
+.worldlabs-card {
+  background-color: var(--worldlabs-card);
+  border: 1px solid var(--worldlabs-border);
+  border-radius: var(--worldlabs-radius-lg);
+  overflow: hidden;
+  transition: var(--worldlabs-transition-normal);
+}
+
+.worldlabs-card:hover {
+  border-color: var(--worldlabs-primary);
+  box-shadow: var(--worldlabs-shadow-md);
+}
+
+.worldlabs-btn-primary {
+  background-color: var(--worldlabs-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: var(--worldlabs-transition-normal);
+}
+
+.worldlabs-btn-primary:hover {
+  background-color: #1e4f7a;
+  color: #ffffff;
+}
+
+.worldlabs-btn-secondary {
+  background-color: var(--worldlabs-card);
+  color: var(--worldlabs-primary-foreground);
+  border: 1px solid var(--worldlabs-border);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: var(--worldlabs-transition-normal);
+}
+
+.worldlabs-btn-secondary:hover {
+  border-color: var(--worldlabs-primary);
+  color: var(--worldlabs-primary);
+}
+
+/* Grid layouts */
+.worldlabs-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.worldlabs-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.worldlabs-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.worldlabs-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .worldlabs-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .worldlabs-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .worldlabs-grid-4,
+  .worldlabs-grid-3,
+  .worldlabs-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .worldlabs-section {
+    padding: 48px 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}

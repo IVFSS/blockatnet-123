@@ -1,0 +1,16 @@
+[
+  {
+    "index": 0,
+    "tag": "nav",
+    "text": "AboutResearch & InsightsMarble LabsCommunity Showc",
+    "href": null,
+    "classes": "border-foreground/10 fixed top-0"
+  },
+  {
+    "index": 1,
+    "tag": "nav",
+    "text": "AboutResearch & InsightsMarble LabsAPISparkCareers",
+    "href": null,
+    "classes": "pointer-events-auto mx-auto flex"
+  }
+]

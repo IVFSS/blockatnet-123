@@ -1,0 +1,254 @@
+[
+  {
+    "index": 0,
+    "tag": "header",
+    "classes": "Header",
+    "text": "SupportSecurity",
+    "rect": {
+      "top": 214,
+      "left": 0,
+      "width": 390,
+      "height": 29.25
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "29.25px 0px 0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 1,
+    "tag": "nav",
+    "classes": "Header-nav",
+    "text": "SupportSecurity",
+    "rect": {
+      "top": 227,
+      "left": 10.84375,
+      "width": 368.3125,
+      "height": 216.625
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 2,
+    "tag": "section",
+    "classes": "HomeHero --in-view",
+    "text": "One wallet\nfor all your cryptoTake\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCtrl  . \n\n\n\n\n\n\n\n\n\n\nDownload for Chrome",
+    "rect": {
+      "top": 214,
+      "left": 0,
+      "width": 390,
+      "height": 844
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 3,
+    "tag": "section",
+    "classes": "SliceScrollableAppScreens Slices-slice --is-first-slice --is-before-SliceBlockchainsSearch",
+    "text": "Create your wallet in seconds.Simple\n\n\n\n\nOne wallet for all your crypto.Multichain\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "rect": {
+      "top": 804.8125,
+      "left": 0,
+      "width": 390,
+      "height": 3798
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "-253.2px 0px 0px"
+    }
+  },
+  {
+    "index": 4,
+    "tag": "section",
+    "classes": "SliceBlockchainsSearch --bg-grey8 Slices-slice --is-after-SliceScrollableAppScreens --is-before-SliceTitleListVertical",
+    "text": "2,500+ chains.  One wallet.Ctrl Wallet supports millions of assets and NFTs on 2,500+ blockchains.Av",
+    "rect": {
+      "top": 4602.8125,
+      "left": 0,
+      "width": 390,
+      "height": 783.203125
+    },
+    "styles": {
+      "background": "rgb(249, 250, 249)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 5,
+    "tag": "section",
+    "classes": "SliceTitleListVertical --bg-white Slices-slice --is-after-SliceBlockchainsSearch --is-before-SliceTitleListGrid",
+    "text": "Level upCapture every opportunity   on every chain.10M+ assets at your fingertipsCtrl supports all t",
+    "rect": {
+      "top": 5386.015625,
+      "left": 0,
+      "width": 390,
+      "height": 2388.734375
+    },
+    "styles": {
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "75.8334px 0px 97.5001px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 6,
+    "tag": "section",
+    "classes": "SliceTitleListGrid --bg-grey8 Slices-slice --is-after-SliceTitleListVertical --is-before-SliceTitleListHorizontal",
+    "text": "Take CtrlJoin the   600,000+ people who trust Ctrl.Founded in 2020, \nCtrl (formerly XDEFI) was the w",
+    "rect": {
+      "top": 7774.75,
+      "left": 0,
+      "width": 390,
+      "height": 2211.171875
+    },
+    "styles": {
+      "background": "rgb(249, 250, 249)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "75.8334px 0px 97.5001px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 7,
+    "tag": "section",
+    "classes": "SliceTitleListHorizontal Slices-slice --is-after-SliceTitleListGrid --is-before-SliceFAQ",
+    "text": "Secure and privateThe Secure way   to Web3Portfolio overviewTrack your entire portfolio in one place",
+    "rect": {
+      "top": 9985.921875,
+      "left": 0,
+      "width": 390,
+      "height": 3002
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 8,
+    "tag": "section",
+    "classes": "StickyHorizontalList",
+    "text": "Secure and privateThe Secure way   to Web3Portfolio overviewTrack your entire portfolio in one place",
+    "rect": {
+      "top": 9985.921875,
+      "left": 0,
+      "width": 390,
+      "height": 3002
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 9,
+    "tag": "section",
+    "classes": "SliceFAQ --bg-grey8 Slices-slice --is-last-slice --is-after-SliceTitleListHorizontal",
+    "text": "Any questions ?FAQHow do I take part in the Midnight Scavenger Mine? You can read our full guide on ",
+    "rect": {
+      "top": 12987.921875,
+      "left": 0,
+      "width": 390,
+      "height": 2619.78125
+    },
+    "styles": {
+      "background": "rgb(249, 250, 249)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "75.8334px 0px 97.5001px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 10,
+    "tag": "footer",
+    "classes": "Footer",
+    "text": "NewsletterSubscribe to our amazing newsletter to receive all the latest news & updates.Tks, you are ",
+    "rect": {
+      "top": 15607.796875,
+      "left": 0,
+      "width": 390,
+      "height": 1068.203125
+    },
+    "styles": {
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  },
+  {
+    "index": 11,
+    "tag": "nav",
+    "classes": "Footer-linksList",
+    "text": "ProductSecuritySupport",
+    "rect": {
+      "top": 16160.265625,
+      "left": 21.671875,
+      "width": 173.328125,
+      "height": 79.078125
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px 0px 21.6667px"
+    }
+  },
+  {
+    "index": 12,
+    "tag": "nav",
+    "classes": "Footer-linksList",
+    "text": "CompanyIntroducing CtrlAbout",
+    "rect": {
+      "top": 16160.265625,
+      "left": 195,
+      "width": 173.328125,
+      "height": 79.078125
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px 0px 21.6667px"
+    }
+  },
+  {
+    "index": 13,
+    "tag": "nav",
+    "classes": "Footer-linksList",
+    "text": "ResourcesNewsDocsMedia KitShortcuts",
+    "rect": {
+      "top": 16261,
+      "left": 21.671875,
+      "width": 173.328125,
+      "height": 131.078125
+    },
+    "styles": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px 0px 21.6667px"
+    }
+  }
+]

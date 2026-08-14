@@ -1,0 +1,46 @@
+module.exports = {
+  extends: ['@moralisweb3', 'plugin:@next/next/recommended', 'plugin:cypress/recommended'],
+  ignorePatterns: ['**/build/**/*'],
+  rules: {
+    'no-console': 'off',
+  },
+  overrides: [
+    {
+      files: ['src/components/templates/**/*', 'src/components/modules/**/*', 'src/theme/chakra.tsx', 'src/utils/**/*', 'src/components/elements/**/*', 'src/components/particles/**/*', 'src/components/layout/**/*'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/no-shadow': 'warn',
+        '@typescript-eslint/no-extra-semi': 'warn',
+        '@typescript-eslint/no-empty-function': 'warn',
+        '@typescript-eslint/no-undef': 'off',
+        'no-inline-comments': 'off',
+        'no-undef': 'off',
+        'arrow-parens': 'warn',
+        'curly': 'warn',
+        'consistent-return': 'warn',
+        'complexity': 'warn',
+        'no-await-in-loop': 'warn',
+        'prefer-const': 'warn',
+        'no-empty-function': 'warn',
+        'no-confusing-arrow': 'warn',
+        'no-else-return': 'warn',
+        'prefer-destructuring': 'warn',
+        'no-promise-executor-return': 'warn',
+        'prefer-template': 'warn',
+        'no-useless-escape': 'warn',
+        'no-empty': 'warn',
+      },
+    },
+    {
+      files: ['pages/api/**/*'],
+      rules: {
+        'etc/no-commented-out-code': 'off',
+        'prefer-destructuring': 'warn',
+        'curly': 'warn',
+        'complexity': 'warn',
+        'arrow-parens': 'warn',
+      },
+    },
+  ],
+};

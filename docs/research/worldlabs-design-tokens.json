@@ -1,0 +1,72 @@
+{
+  "colors": {
+    "background": "rgb(249, 249, 251)",
+    "text": "rgb(46, 46, 56)",
+    "h1": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "h2": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "h3": {
+      "color": "rgb(249, 249, 251)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "p": {
+      "color": "rgb(148, 148, 168)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "a": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "button": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    "[class*=\"card\"]": {
+      "color": "rgb(46, 46, 56)",
+      "bg": "rgb(255, 255, 255)"
+    },
+    "allColors": [
+      "rgb(0, 0, 0)",
+      "rgb(46, 46, 56)",
+      "rgb(95, 95, 117)",
+      "rgb(249, 249, 251)",
+      "rgb(255, 255, 255)",
+      "rgb(148, 148, 168)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "allBgColors": [
+      "rgb(249, 249, 251)",
+      "rgb(46, 46, 56)",
+      "rgb(255, 255, 255)",
+      "rgb(17, 17, 17)",
+      "oklab(0.928 -0.000571842 -0.00597269 / 0.25)",
+      "rgb(42, 103, 156)"
+    ]
+  },
+  "fonts": {
+    "body": "roobert, \"roobert Fallback\"",
+    "h1": "\"Gilda Display\", \"Gilda Display Fallback\"",
+    "h2": "\"Gilda Display\", \"Gilda Display Fallback\"",
+    "h3": "roobert, \"roobert Fallback\"",
+    "p": "roobert, \"roobert Fallback\"",
+    "a": "roobert, \"roobert Fallback\"",
+    "button": "roobert, \"roobert Fallback\"",
+    "[class*=\"card\"]": "roobert, \"roobert Fallback\""
+  },
+  "spacing": {},
+  "shadows": {},
+  "borderRadii": {
+    "h1": "0px",
+    "h2": "0px",
+    "h3": "0px",
+    "p": "0px",
+    "a": "0px",
+    "button": "0px",
+    "[class*=\"card\"]": "16px"
+  }
+}
