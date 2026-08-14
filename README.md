@@ -1,24 +1,172 @@
-# `blockatnet`
+# blockatnet
 
-npm install yarn
+A modern crypto market dashboard with DeFi wallet integration, built with Next.js, Chakra UI, and CCXT.
 
+## Live Demo
+
+[https://blockatnet-123.vercel.app](https://blockatnet-123.vercel.app)
+
+## Features
+
+- **Wallet Connection** - Connect via MetaMask or other EVM wallets using wagmi + NextAuth + Moralis
+- **Live Market Data** - Real-time crypto prices powered by CCXT (Binance, Coinbase, etc.)
+- **Token Ratings** - TokenInsight rating widgets embedded via auto-resizing iframes
+- **Portfolio Tracking** - Transaction history, token balances, NFT holdings
+- **Price Alerts** - Set custom alerts for crypto price movements
+- **Responsive Design** - Mobile-first with bouncy animated navigation
+- **Dark Mode** - Full light/dark theme support with smooth transitions
+
+## Tech Stack
+
+- **Framework**: Next.js 13 (App Router)
+- **UI**: Chakra UI + Framer Motion
+- **Market Data**: CCXT (exchange data) + Moralis (on-chain data)
+- **Wallet**: wagmi + NextAuth.js + Moralis Auth
+- **Charts**: Chart.js + React Chart.js
+- **Animations**: GSAP + Framer Motion
+- **Deploy**: Vercel
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Moralis API key (get one at [admin.moralis.io](https://admin.moralis.io))
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/IVFSS/blockatnet-123.git
+cd blockatnet-123
+
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Create .env.local with your environment variables
+cp .env.example .env.local
+```
+
+### Environment Variables
+
+Create a `.env.local` file:
+
+```env
+# Moralis API key (required for wallet features)
+MORALIS_API_KEY=your_moralis_api_key
+
+# NextAuth (required for wallet authentication)
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXTAUTH_URL=http://localhost:3000
+
+# TokenInsight API key (for token ratings)
+TOKENINSIGHT_API_KEY=your_tokeninsight_api_key
+```
+
+### Development
+
+```bash
+# Start dev server
 npm run dev
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjI5N2Y2Mjc1LWVhZDQtNDNiOC04MmU2LWQyOTc2NDFkODdlYiIsIm9yZ0lkIjoiMzg0NjAyIiwidXNlcklkIjoiMzk1MTc2IiwidHlwZUlkIjoiZmZhOWY5NjAtZjZjMy00Y2JhLThhYTgtNWNhYzNkMTFkMGJmIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MTEzNTQ1MTksImV4cCI6NDg2NzExNDUxOX0.h9-OeF5VKg4jPHXylfBaXphHk_Hm1ljzxYEDPtlx_BU
+# Build for production
+npm run build
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjU5ZTQ5YWYyLTkwMTAtNGIwMi1iMTU0LWU5YWFhNTNiMjgyMiIsIm9yZ0lkIjoiMzg0NjA1IiwidXNlcklkIjoiMzk1MTc5IiwidHlwZUlkIjoiMWUzOGMxOWItNTljNi00MWRjLWE2NzAtNTdkOTExZjM2YjQ2IiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MTEzNTY0MzUsImV4cCI6NDg2NzExNjQzNX0.-qwxoVBF8ZnqFKYGLua3zkgp8iuLR-3rguHLeytEg8o
+# Start production server
+npm start
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjdmYzQyYWI2LTY3NWUtNDRlZC1hZjNlLWY0ZTA4YzJmZTY4YSIsIm9yZ0lkIjoiMzgyMTE1IiwidXNlcklkIjoiMzkyNjMxIiwidHlwZUlkIjoiOThiODFlYjAtMDJjOS00YjlmLWFlMDAtMGE0OTMwYTQ0Nzg2IiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MTAwODQzMTYsImV4cCI6NDg2NTg0NDMxNn0.2EXsAp_rjGC42FAagRk8Abpz1n7jJ9kpPlQWpGYBuFg
+# Run linter
+npm run lint
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImQ3ZDY2NWQzLTIyNDYtNDQ3Ni1iYmE2LTdkOWViZmI5OTkzYyIsIm9yZ0lkIjoiMzY0ODg4IiwidXNlcklkIjoiMzc1MDEwIiwidHlwZUlkIjoiMDNmYTExNTMtZmYzOC00ZjU3LTg4YTItMTk4MGVlMWQwZWUzIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MDAzMTUzMTAsImV4cCI6NDg1NjA3NTMxMH0.6heL_EFvR_PN7kN0lsL9g1kTzpK12q0rxpAn0JZuG_8
+# Check formatting
+npm run format:check
+```
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjgxZGRhMTUyLTJjNjItNDM3MS1hMWYxLThiNjBkNmFmOGY0NCIsIm9yZ0lkIjoiMzY1MzUyIiwidXNlcklkIjoiMzc1NDg4IiwidHlwZUlkIjoiNDVhYTUzYTItMTZiYy00ZTUyLThhYzQtN2Y1MDMxZDU2NDE4IiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MDA2MzE1MTAsImV4cCI6NDg1NjM5MTUxMH0.CZoF2bzrUxc5Lz1EynGjFPnG5Cxy2MXj4MSpFr6RAlQ
+## Project Structure
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImVhYTg0YTFjLTY0Y2QtNDFmMS1iNGJmLTc2Nzc5NGM1YmI0ZSIsIm9yZ0lkIjoiMzY1MzU2IiwidXNlcklkIjoiMzc1NDkyIiwidHlwZUlkIjoiMGU2NDIxN2MtNzg2OS00MTc5LThhNWItM2YyNDhkZmY2NzU3IiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MDA2MzIyMjYsImV4cCI6NDg1NjM5MjIyNn0.DylRjEqP-V0hBx09pJl75NYY1gAWvWf_wq4j2RerLkQ
+```
+├── pages/
+│   ├── api/
+│   │   ├── market/          # CCXT market data API routes
+│   │   │   ├── index.ts     # Combined market endpoint
+│   │   ├── moralis/         # Moralis API proxy
+│   │   └── auth/            # NextAuth endpoints
+│   ├── index.tsx            # Home page
+│   ├── alert.tsx            # Price alert system
+│   ├── track.tsx            # Portfolio tracking
+│   ├── transactions.tsx     # Transaction history
+│   ├── balances/            # Token/NFT balances
+│   └── transfers/           # Token/NFT transfers
+├── src/
+│   ├── components/
+│   │   ├── layout/          # BouncyNav, Hero, Footer, etc.
+│   │   ├── modules/         # ConnectButton, Footer
+│   │   ├── elements/        # Logo, ColorModeButton
+│   │   ├── particles/       # Canvas-based particles background
+│   │   └── templates/       # Page templates (Cryptocurrencies, Alert, Track)
+│   ├── theme/               # Coinbase-style color scheme
+│   ├── utils/               # API helpers, animations, rate limiting
+│   └── types/               # TypeScript type definitions
+```
 
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImRmNWRkNTA0LTllOWItNDVlZS05MGExLWY2ZDZjMTAxNDYyOSIsIm9yZ0lkIjoiMzY1MzU4IiwidXNlcklkIjoiMzc1NDk0IiwidHlwZUlkIjoiZGZkMDYwZWItY2VkZS00OTMzLWFiZDktNmVlYTljYzZmNzNkIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MDA2MzI0NTQsImV4cCI6NDg1NjM5MjQ1NH0.koDD5b4MbMOlzVr74U9yH-J1b6GJtMs766J-ZxaGT0k
+## API Routes
 
+All market data routes include rate limiting (60 req/min per IP) and input validation:
 
-0x000000000000000000000000000000000000000000000000000000000000000a
+- `GET /api/market?type=tickers` - Fetch market tickers (CCXT)
+- `GET /api/market?type=ohlcv&symbol=BTC/USDT` - Fetch OHLCV data
+- `GET /api/market/tickers?exchange=binance&limit=50` - Exchange tickers
+- `GET /api/market/ticker?symbol=BTC/USDT` - Single token ticker
+- `GET /api/market/orderbook?symbol=BTC/USDT` - Order book data
+- `GET /api/moralis/*` - Moralis API proxy (avoids exposing API keys client-side)
 
-0000000000000000000000000000000000000000000000000000000000000003
+## Pages
+
+| Route                  | Description                          |
+|------------------------|--------------------------------------|
+| `/`                    | Home page with market overview       |
+| `/Cryptocurrencies`    | Token list with charts & ratings     |
+| `/alert`               | Price alert creation & management    |
+| `/track`               | Portfolio performance visualization  |
+| `/transactions`        | Transaction history                |
+| `/balances/erc20`      | ERC20 token balances                |
+| `/balances/nft`        | NFT holdings                        |
+| `/transfers/erc20`     | ERC20 transfer history             |
+| `/transfers/nft`       | NFT transfer history               |
+
+## Design System
+
+- **Colors**: Coinbase blue (#0052FF), dark mode backgrounds
+- **Typography**: Inter font family
+- **Animations**: Spring-based (Framer Motion) + scroll-triggered (GSAP)
+
+## Deploy
+
+Deploy to Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/IVFSS/blockatnet-123.git&env=MORALIS_API_KEY,NEXTAUTH_SECRET,NEXTAUTH_URL,TOKENINSIGHT_API_KEY)
+
+Or manually:
+```bash
+npm run build
+npx vercel --prod
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feat/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feat/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+MIT License - see [LICENSE.md](LICENSE.md) for details.
+
+## Acknowledgments
+
+- [CCXT](https://github.com/ccxt/ccxt) for exchange market data
+- [Moralis](https://moralis.io/) for Web3 API infrastructure
+- [TokenInsight](https://www.tokeninsight.com/) for token ratings
+- [Framer Motion](https://www.framer.com/motion/) for animations
