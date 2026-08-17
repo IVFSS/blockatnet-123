@@ -58,7 +58,7 @@ const Track = () => {
   };
 
   const fetchTransactionHistory = async (address) => {
-    const url = `/api/moralis/wallets/${address}/history?chain=eth&from_date=${fromDate}&to_date=${toDate}&include_internal_transactions=true&nft_metadata=true&order=DESC`;
+    const url = `/api/moralis/wallets/${address}/history?chain=eth&from_date=${fromDate}&to_date=${toDate}&order=DESC`;
 
     try {
       const response = await fetch(url);
@@ -79,8 +79,12 @@ const Track = () => {
       console.error("Failed to fetch transaction history:", error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       toast({
-        title: "An error occurred",
-        description: `Unable to fetch transaction history: ${errorMessage}`,
+        title: "Unable to fetch transactions",
+        description: errorMessage.includes("401") || errorMessage.includes("403") ? 
+          "Authentication error - API key may be invalid or expired" :
+          errorMessage.includes("404") ?
+          "Address not found or no transactions" :
+          errorMessage,
         status: "error",
         duration: 9000,
         isClosable: true,
