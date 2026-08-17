@@ -64,12 +64,23 @@ const Track = () => {
       const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
-      processTransactions(data.result); 
+      const transactionsData = data.result || data.transactions || [];
+      if (transactionsData.length === 0) {
+        toast({
+          title: "No Transactions",
+          description: "No transaction history found for this address.",
+          status: "info",
+          duration: 5000,
+          isClosable: true,
+        });
+      }
+      processTransactions(transactionsData); 
     } catch (error) {
       console.error("Failed to fetch transaction history:", error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       toast({
         title: "An error occurred",
-        description: "Unable to fetch transaction history.",
+        description: `Unable to fetch transaction history: ${errorMessage}`,
         status: "error",
         duration: 9000,
         isClosable: true,
@@ -78,19 +89,28 @@ const Track = () => {
   };
 
   const processTransactions = (transactions) => {
+    if (!Array.isArray(transactions)) return;
     const processed = transactions.reduce((acc, tx) => {
+      const fromAddress = tx.from_address || tx.fromAddress || tx.from;
+      const toAddress = tx.to_address || tx.toAddress || tx.to;
+      const nullAddress = "0x0000000000000000000000000000000000000000";
+
       // Filter out transactions involving the null address in any significant role
-      if (tx.from_address === "0x0000000000000000000000000000000000000000") {
+      if (fromAddress === nullAddress) {
         if (tx.erc20_transfers && tx.erc20_transfers.length > 0) {
           tx.from_address = tx.erc20_transfers[0].from_address;
+        } else if (tx.nft_transfers && tx.nft_transfers.length > 0) {
+          tx.from_address = tx.nft_transfers[0].from_address;
         } else {
-          return acc; 
+          return acc;
         }
       }
 
       // Similar handling could be added for to_address if necessary
-      if (tx.to_address === "0x0000000000000000000000000000000000000000" && tx.erc20_transfers && tx.erc20_transfers.length > 0) {
+      if (toAddress === nullAddress && tx.erc20_transfers && tx.erc20_transfers.length > 0) {
         tx.to_address = tx.erc20_transfers[0].to_address;
+      } else if (toAddress === nullAddress && tx.nft_transfers && tx.nft_transfers.length > 0) {
+        tx.to_address = tx.nft_transfers[0].to_address;
       }
 
       acc.push(tx);
@@ -236,10 +256,18 @@ const Track = () => {
 
       setSelectedNode({
         address: node.id,
-        transactions: relatedTransactions.map(tx => ({
-          ...tx,
-          transactionFeeEth: ethers.utils.formatEther(ethers.BigNumber.from(tx.gas_price).mul(tx.gas))
-        }))
+        transactions: relatedTransactions.map(tx => {
+          try {
+            return {
+              ...tx,
+              transactionFeeEth: tx.gas_price ? 
+                ethers.utils.formatEther(ethers.BigNumber.from(tx.gas_price as string).mul(tx.gas)) :
+                'N/A'
+            };
+          } catch {
+            return { ...tx, transactionFeeEth: 'N/A' };
+          }
+        })
       });
 
     } else {
