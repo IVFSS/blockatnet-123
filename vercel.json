@@ -4,7 +4,7 @@
     "env": {}
   },
   "env": {
-    "MORALIS_API_KEY": "your_moralis_api_key_here",
+    "MORALIS_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImVhMGViNmQ2LTY5YmEtNDI2OC04N2RmLWY4N2RjYjJkMDRhMyIsIm9yZ0lkIjoiMzgzMzE4IiwidXNlcklkIjoiMzkzODYwIiwidHlwZVkiOiJQUk9KRUNUaIIsInRpIjoxNzEwNjk2Njc0LCJleHAiOjQ4NjY0NTY2NzR9.2XSRCc86XZ_Tex_rHZJv3KIsmNEiXakclNUAGtBY4uA",
     "NEXTAUTH_SECRET": "a120ababc0ceb69e42994089e2b02a5d",
     "NEXTAUTH_URL": "https://blockatnet-123.vercel.app",
     "TOKENINSIGHT_API_KEY": "1ff938a878c643d89746cbd448ad08ad"
