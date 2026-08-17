@@ -69,8 +69,12 @@ const Alert = () => {
           if (ccxtResponse.ok) {
             const ccxtData = await ccxtResponse.json();
             const formattedPrices = {};
-            ccxtData.tickers.forEach((t) => {
-              formattedPrices[t.symbol.replace('/', '-').toLowerCase()] = { usd: t.price || 0 };
+            const tickers = ccxtData.data || ccxtData.tickers || [];
+            tickers.forEach((t) => {
+              const cryptoKey = t.base ? t.base.toLowerCase() : '';
+              if (cryptoKey) {
+                formattedPrices[cryptoKey] = { usd: t.price || t.last || 0 };
+              }
             });
             setPrices(formattedPrices);
             checkThresholds(formattedPrices, thresholds);
@@ -88,8 +92,9 @@ const Alert = () => {
 
   const checkThresholds = (currentPrices, currentThresholds) => {
     CRYPTOCURRENCIES.forEach((crypto) => {
-      const currentPrice = currentPrices[crypto]?.usd;
-      if (currentPrice === undefined) return;
+      // Try multiple formats: 'bitcoin', 'BTC', etc
+      const currentPrice = currentPrices[crypto]?.usd || currentPrices[crypto.toLowerCase()]?.usd;
+      if (currentPrice === undefined || currentPrice === 0 || isNaN(currentPrice)) return;
       const target = currentThresholds[crypto];
       if (target === undefined) return;
 

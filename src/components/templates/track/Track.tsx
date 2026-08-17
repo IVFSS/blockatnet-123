@@ -78,10 +78,37 @@ const Track = () => {
     } catch (error) {
       console.error("Failed to fetch transaction history:", error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      if (errorMessage.includes("500") || errorMessage.includes("Authentication")) {
+        // Moralis API unavailable, try Etherscan fallback
+        try {
+          const etherscanUrl = `https://api.etherscan.io/api?module=account&address=${address}&startblock=0&endblock=99999999&page=1&offset=100&sort=asc&action=txlist`;
+          const etherscanRes = await fetch(etherscanUrl);
+          if (etherscanRes.ok) {
+            const etherscanData: any = await etherscanRes.json();
+            if (etherscanData.status === "1" && etherscanData.result?.length > 0) {
+              // Transform Etherscan format to match Moralis expectations
+              const transformed = etherscanData.result.map((tx: any) => ({
+                hash: tx.hash,
+                from_address: tx.from,
+                to_address: tx.to,
+                value: tx.value,
+                gas: tx.gas,
+                gas_price: tx.gasPrice,
+                block_timestamp: parseInt(tx.timeStamp) * 1000,
+                block_number: parseInt(tx.blockNumber),
+              }));
+              processTransactions(transformed);
+              return;
+            }
+          }
+        } catch (fallbackError) {
+          console.error("Etherscan fallback also failed:", fallbackError);
+        }
+      }
       toast({
         title: "Unable to fetch transactions",
         description: errorMessage.includes("401") || errorMessage.includes("403") ? 
-          "Authentication error - API key may be invalid or expired" :
+          "Authentication error - Moralis API key issue (this is a server configuration problem)" :
           errorMessage.includes("404") ?
           "Address not found or no transactions" :
           errorMessage,
