@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { useSession } from 'next-auth/react';
 import { Input, Flex, Box, useToast, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Button, useClipboard, FormLabel } from '@chakra-ui/react';
-import * as d3 from 'd3';
 import { ethers } from 'ethers';
 
 const Track = () => {
@@ -101,18 +100,26 @@ const Track = () => {
     updateGraph(processed);
   };
 
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Update graph visualization
   useEffect(() => {
+    if (!isClient) return;
     if (!svgRef.current) return;
     if (transactions.length > 0) {
       updateGraph(transactions);
     }
-  }, [transactions, svgRef.current]);
+  }, [transactions, svgRef.current, isClient]);
 
-  // Update graph visualization
-  const updateGraph = (transactions) => {
+// Update graph visualization
+  const updateGraph = async (transactions) => {
     if (!svgRef.current) return;
 
+    const d3 = await import('d3');
     d3.select(svgRef.current).selectAll("*").remove();
 
     const width = svgRef.current.clientWidth;
@@ -240,14 +247,6 @@ const Track = () => {
       setSelectedNode(null);
     }
   }, [transactions, isLocked, sessionData?.user?.address]);
-
-
-
-  useEffect(() => {
-    if (transactions.length > 0) {
-      updateGraph(transactions);
-    }
-  }, [transactions, svgRef.current, isLocked]);
 
   return (
     <Flex bg="ctrlBg" minH="100vh">

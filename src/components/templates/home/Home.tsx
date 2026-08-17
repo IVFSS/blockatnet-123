@@ -78,23 +78,15 @@ const Home = () => {
   }, [data?.user?.address]);
   
   
-  const MORALIS_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6ImVhMGViNmQ2LTY5YmEtNDI2OC04N2RmLWY4N2RjYjJkMDRhMyIsIm9yZ0lkIjoiMzgzMzE4IiwidXNlcklkIjoiMzkzODYwIiwidHlwZUlkIjoiOGVkMDgxYTgtM2MzZC00NmJhLWJmMWItMjY2MmY4ZTljNTBiIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MTA2OTY2NzQsImV4cCI6NDg2NjQ1NjY3NH0.2XSRCc86XZ_Tex_rHZJv3KIsmNEiXakclNUAGtBY4uA';
+
   // Calculate New Worth
   const fetchNetWorth = async () => {
     const address = data?.user?.address;
     if (!address) return;
 
-    const url = `https://deep-index.moralis.io/api/v2.2/wallets/${address}/net-worth?exclude_spam=true&exclude_unverified_contracts=true&to_block=17386660`;
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-API-Key': MORALIS_API_KEY,
-        'Accept': 'application/json',
-      },
-    };
-
+    const url = `/api/moralis/wallets/${address}/net-worth?exclude_spam=true&exclude_unverified_contracts=true&to_block=17386660`;
     try {
-      const response = await fetch(url, options);
+      const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
       console.log('Net worth data:', data);
@@ -105,17 +97,10 @@ const Home = () => {
   };
   
   const fetchTopTokens = async () => {
-    const url = 'https://deep-index.moralis.io/api/v2.2/market-data/erc20s/top-movers';
-    const options = {
-      method: 'GET',
-      headers: {
-        'accept': 'application/json',
-        'X-API-Key': MORALIS_API_KEY,
-      },
-    };
+    const url = `/api/moralis/market-data/erc20s/top-movers`;
 
     try {
-      const response = await fetch(url, options);
+      const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const jsonResponse = await response.json();
       const movers = showGainers ? jsonResponse.gainers : jsonResponse.losers;
@@ -198,15 +183,10 @@ const Home = () => {
     const fetchTokenBalancesAndPrices = async () => {
       const address = data?.user?.address; 
       if (!address) return;
-      const url = `https://deep-index.moralis.io/api/v2.2/wallets/${address}/tokens?chain=eth&exclude_spam=true&exclude_unverified_contracts=true`;
+        const url = `/api/moralis/wallets/${address}/tokens?chain=eth&exclude_spam=true&exclude_unverified_contracts=true`;
   
-      try {
-        const response = await fetch(url, {
-          headers: {
-            'accept': 'application/json',
-            'X-API-Key': MORALIS_API_KEY,
-          },
-        });
+        try {
+          const response = await fetch(url);
   
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
@@ -227,7 +207,7 @@ const Home = () => {
     if(data?.user?.address) {
       fetchTokenBalancesAndPrices();
     }
-  }, [data?.user?.address, MORALIS_API_KEY]); 
+  }, [data?.user?.address]);
 
   const [chartData, setChartData] = useState({
     labels: [],
@@ -259,17 +239,9 @@ const Home = () => {
     let historicalData = [];
     for (let i = 11; i >= 0; i--) {
         const date = moment().subtract(i, 'months').startOf('month').unix();
-        const url = `https://deep-index.moralis.io/api/v2.2/dateToBlock?chain=eth&date=${date}`;
-        const options = {
-            method: 'GET',
-            headers: {
-                'accept': 'application/json',
-                'X-API-Key': MORALIS_API_KEY,
-            },
-        };
-
+        const url = `/api/moralis/dateToBlock?chain=eth&date=${date}`;
         try {
-            const response = await fetch(url, options);
+            const response = await fetch(url);
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const data = await response.json();
             const block = data.block;
@@ -281,15 +253,9 @@ const Home = () => {
 
 
     const currentDate = moment().unix();
-    const currentUrl = `https://deep-index.moralis.io/api/v2.2/dateToBlock?chain=eth&date=${currentDate}`;
+    const currentUrl = `/api/moralis/dateToBlock?chain=eth&date=${currentDate}`;
     try {
-        const response = await fetch(currentUrl, {
-            method: 'GET',
-            headers: {
-                'accept': 'application/json',
-                'X-API-Key': MORALIS_API_KEY,
-            },
-        });
+        const response = await fetch(currentUrl);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const currentData = await response.json();
         const currentBlock = currentData.block;
@@ -322,15 +288,7 @@ const fetchTokenBalancesAndCalculateValue = async () => {
   let totalValuesAtBlocks = [];
 
   for (const entry of historicalData) {
-    const url = `https://deep-index.moralis.io/api/v2.2/wallets/${address}/tokens?chain=eth&to_block=${entry.block}&exclude_spam=true&exclude_unverified_contracts=true`;
-    const options = {
-      method: 'GET',
-      headers: {
-        'accept': 'application/json',
-        'X-API-Key': MORALIS_API_KEY,
-      },
-    };
-
+    const url = `/api/moralis/wallets/${address}/tokens?chain=eth&to_block=${entry.block}&exclude_spam=true&exclude_unverified_contracts=true`;
     try {
       const response = await fetch(url, options);
       if (!response.ok) {
